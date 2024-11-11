@@ -3,7 +3,9 @@
 
 ```bash
 git clone https://github.com/hojat-gazestani/My_app.git && cd My_app/
-source myapp/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 
 cd myproject
 docker build  -t my_app .
