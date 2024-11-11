@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+
+# Patches for staging environment
+patchesStrategicMerge:
+  - replica-patch.yaml
