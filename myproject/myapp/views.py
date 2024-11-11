@@ -7,7 +7,7 @@ from myproject.context_processors import gunicorn_port
 hostname = socket.gethostname()
 
 def app(request):
-    return HttpResponse(f"Application on {hostname}, Gunicorn port: { gunicorn_port(request)}")
+    return HttpResponse(f"Application test on {hostname}, Gunicorn port: { gunicorn_port(request)}")
     
 def app1(request):
     return HttpResponse(f"app1 on {hostname}, Gunicorn port: { gunicorn_port(request)}")
