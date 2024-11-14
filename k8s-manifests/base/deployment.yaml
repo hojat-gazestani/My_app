@@ -15,5 +15,6 @@ spec:
       containers:
         - name: my-app
           image: hojatgazni/my_app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8001
